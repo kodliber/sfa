@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>
+            {% block title %}Starfigher Academy{% endblock %}
+        </title>
+        {% block stylesheets %}
+            <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/sfa.css') }}">
+        {% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
+    </head>
+
+    <body>
+        {% block menu %}
+        <div id="menu">
+                <div class="container">
+                    <div class="row">
+                        <nav class="navbar navbar-light bg-faded">
+                            <a href="{{ url('homepage') }}" class="navbar-brand">Starfighter Academy</a>
+                            <a href="{{ url('leaders-list') }}" class="nav-item nav-link active">Leaders</a>
+                            <a href="{{ url('pilotes-list') }}" class="nav-item nav-link">Pilotes</a>
+                            <a href="{{ url('contact-form') }}" class="nav-item nav-link">Contact</a>
+                            <a href="{{ url('about') }}" class="nav-item nav-link">A propos</a>
+                            <a href="{{ url('copyright') }}" class="nav-item nav-link">Copyright</a>
+                            <div class="navbar-nav"></div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        {% endblock %}
+
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+{% block title %}Academy of Starfighting{% endblock %}
+
+{% block body %}
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm col-md col-lg">
+
+                    <h1>Cadet, au rapport</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="homepage">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm col-md col-lg">
+                    <p>{{ "now"| date("d m Y")}}</p>
+                    <p>En entrant dans la Starfighter Academy, tu rejoins l'elite de la defense de la Terre.</p>
+                    <p>Sois digne de notre confiance.</p>
+                    <p>Et au passage, travaille ton PHP.</p>
+                </div>
+                <div class="col-sm col-md col-lg">
+                    <p>
+
+                        photo : Alex Rogan, dernier Starfighter de renom.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+</div>
+
+{% endblock %}
